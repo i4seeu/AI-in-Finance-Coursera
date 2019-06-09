@@ -26,3 +26,18 @@ for epoch in range(n_epochs):
 
 print(theta)
 
+#implementing linear regression using SGD sklearn
+from sklearn.linear_model import SGDRegressor
+sgd_reg = SGDRegressor(n_iter=50, penalty = None,eta0 =  0.1)
+sgd_reg.fit(X,y.ravel())
+
+print(sgd_reg.intercept_, sgd_reg.coef_)
+
+
+
+
+
+
+
+
+
